@@ -1,3 +1,7 @@
+require_relative 'capitalize_decorator'
+require_relative 'trimmer_decorator'
+require_relative 'nameable'
+
 # for person
 class Person
   attr_reader :id
