@@ -1,4 +1,9 @@
-class 'Person'
+# frozen_string_literal: true
+
+# for person
+
+# for person
+class Person
   attr_reader :id
   attr_accessor :name, :age
 

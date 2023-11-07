@@ -1,5 +1,10 @@
+# frozen_string_literal: true
+
+# for teacher
+
 require_relative 'Person'
 
+# for teacher
 class Teacher < Person
   attr_accessor :specialization
 
