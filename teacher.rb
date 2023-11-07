@@ -1,7 +1,3 @@
-# frozen_string_literal: true
-
-# for teacher
-
 require_relative 'Person'
 
 # for teacher

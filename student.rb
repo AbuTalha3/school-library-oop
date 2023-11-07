@@ -1,7 +1,3 @@
-# frozen_string_literal: true
-
-# for students
-
 require_relative 'person'
 
 # for students
