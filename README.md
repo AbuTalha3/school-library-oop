@@ -154,6 +154,8 @@ It can store data of books , students who took the books etc.
 Upcoming improvements:
 
 - [] Improve the app to include more feilds.
+- Borrowing of books
+- Permission of parents to students under 18 years.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
