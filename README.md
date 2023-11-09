@@ -21,7 +21,7 @@
 
 # 📖 [Enumerable] <a name="about-project"></a>
 
-*# OOP_school_library* is a Ruby project that involves creating a Ruby App Building a library for a school representing students and teachers.
+*# OOP_school_library* is a Ruby project that involves creating a Ruby App Building a library for a school representing students and teachers. creating the classes for our school library and create the associations between them.
 
 ## 🛠 Built With <a name="built-with"></a>
 Ruby, Visual Studia Code, WSL
@@ -153,9 +153,10 @@ It can store data of books , students who took the books etc.
 
 Upcoming improvements:
 
-- [] Improve the app to include more feilds.
+- Improve the app to include more feilds.
 - Borrowing of books
 - Permission of parents to students under 18 years.
+- Create a class Classroom
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
