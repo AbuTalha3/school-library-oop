@@ -10,4 +10,7 @@ class before do
   def add_rental(person, date)
     Rental.new(date, self, person) 
   end
+
+  has_many :rentals
+  end
 end

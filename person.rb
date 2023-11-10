@@ -28,4 +28,7 @@ end
   def add_rentals(_person, date)
     Rental.new(date, book, self)
   end
+
+    has_many :rentals
+  end
 end

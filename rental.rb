@@ -6,7 +6,10 @@ class Rental
     @book = book
     @person = person
 
-    book.add_rental(self)
     person.add_rental(self)
+    book.add_rental(self)
+  end
+
+  rental = Rental.new(person, book)
   end
 end
