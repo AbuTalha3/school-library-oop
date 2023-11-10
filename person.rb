@@ -23,6 +23,10 @@ class Person
   def of_age?
     @age >= 18
   end
+
+  def correct_name
+    @name
+  end
 end
 
 person1 = Person.new(1, 17, name: 'Abutalha', parent_permission: false)
