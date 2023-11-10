@@ -23,10 +23,10 @@ class Person
   def of_age?
     @age >= 18
   end
-end
 
-def add_rentals(_person, date)
-  Rental.new(date, book, self)
-end
+  def add_rentals(_person, date)
+    Rental.new(date, book, self)
+  end
 
-has_many :rentals
+  has_many :rentals
+end

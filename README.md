@@ -19,10 +19,10 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Enumerable] <a name="about-project"></a>
+# 📖 [School_library_oop] <a name="about-project"></a>
 
 
-*# OOP_school_library* is a Ruby project that involves creating a Ruby App and Building a library for a school representing students and teachers. Later you can add more details like borrowing of books, parents permission to students younger than 18 years etc.
+*# school_library_oop* is a Ruby project that involves creating a Ruby App and Building a library for a school representing students and teachers. Later you can add more details like borrowing of books, parents permission to students younger than 18 years etc.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -38,9 +38,6 @@ Ruby, Visual Studia Code, WSL
   <summary>WSL</summary>
 </details>
 
-### Key Features <a name="key-features"></a>
-
-- *[OOP_school_library]*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -62,7 +59,6 @@ Ruby, Visual Studia Code, WSL
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
-
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 <br>
