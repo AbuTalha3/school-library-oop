@@ -7,9 +7,9 @@ class App
   attr_accessor :people, :book, :rentals
 
   def initialize
-    @people =[]
-    @books =[]
-    @rentals =[]
+    @people = []
+    @books = []
+    @rentals = []
   end
 
   def list_books
@@ -47,7 +47,7 @@ class App
       parent_permission = gets.chomp.downcase == 'y'
       @people << Student.new(name, age, parent_permission, Specialization)
     end
-    
+
     puts 'Person created successfully'
   end
 
