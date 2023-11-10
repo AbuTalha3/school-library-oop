@@ -1,5 +1,5 @@
 class before do
-  attr_accessor : title, :author, :rentals 
+  attr_accessor :title, :author :rentals 
 
   def initialize(title, author)
     @title = title
@@ -12,5 +12,3 @@ class before do
   end
 
   has_many :rentals
-  end
-end

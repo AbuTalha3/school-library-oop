@@ -1,4 +1,4 @@
-class Rental 
+class Rental
   attr_accessor :date, :book, :person
 
   def initialize(date, book, person)
@@ -11,5 +11,4 @@ class Rental
   end
 
   rental = Rental.new(person, book)
-  end
 end
