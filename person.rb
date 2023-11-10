@@ -5,7 +5,7 @@ require_relative 'nameable'
 # for person
 class Person
   attr_reader :id
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :rentals
 
   def initialize(id, age, name: 'Unknown', parent_permission: true)
     @id = id
