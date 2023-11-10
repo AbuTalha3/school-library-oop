@@ -1,5 +1,5 @@
 class before do
-  attr_accessor :title, :author :rentals 
+  attr_accessor :title, :author, :rentals 
 
   def initialize(title, author)
     @title = title
@@ -8,7 +8,8 @@ class before do
   end
 
   def add_rental(person, date)
-    Rental.new(date, self, person) 
+    Rental.new(date, self, person)
   end
+end
 
   has_many :rentals

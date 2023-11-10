@@ -10,5 +10,5 @@ class Rental
     book.add_rental(self)
   end
 
-  rental = Rental.new(person, book)
+  Rental.new(person, book)
 end
