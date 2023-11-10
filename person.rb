@@ -3,7 +3,7 @@ require_relative 'trimmer_decorator'
 require_relative 'nameable'
 
 # for person
-class Person
+class Person < Nameable
   attr_reader :id
   attr_accessor :name, :age
 
