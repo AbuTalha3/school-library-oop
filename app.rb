@@ -40,7 +40,7 @@ class App
 
     if person_type == 2
       print 'Specialization:'
-      Specialization = gets.chomp
+      specialization = gets.chomp
       @people << Teacher.new(name, age, Specialization)
     else
       print 'Have Parent permission? [Y/N]'
