@@ -159,6 +159,8 @@ Upcoming improvements:
 - Borrowing of books
 - Permission of parents to students under 18 years.
 - Create a class Classroom
+- Preserve DATA
+- Unit tests
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
