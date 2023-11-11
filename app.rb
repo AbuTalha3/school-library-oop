@@ -28,27 +28,37 @@ class App
     end
   end
 
+  def create_teacher
+    puts 'Age'
+    age = gets.chomp
+    puts 'Name'
+    name = gets.chomp
+    puts 'Specialization'
+    specialization = gets.chomp
+    @people << Teacher.new(age, specialization, name)
+    puts 'Person created successfully'
+  end
+
+  def create_student
+    puts 'Age'
+    age = gets.chomp
+    puts 'Name'
+    name = gets.chomp
+    puts 'Have Parent permission?[Y/N]'
+    parent_permission = gets.chomp.downcase == 'y'
+    @people << Student.new(age, name, parent_permission: parent_permission)
+    puts 'Person created successfully'
+  end
+
   def create_person
     print 'Do you want to add a student (1) or a teacher (2)? [select number 1 or 2]:'
     person_type = gets.chomp.to_i
 
-    print 'Age:'
-    age = gets.chomp
-
-    print 'Name:'
-    name = gets.chomp
-
     if person_type == 2
-      print 'Specialization:'
-      gets.chomp
-      @people << Teacher.new(name, age, Specialization)
+      create_teacher
     else
-      print 'Have Parent permission? [Y/N]'
-      parent_permission = gets.chomp.downcase == 'y'
-      @people << Student.new(name, age, parent_permission, Specialization)
+      create_student
     end
-
-    puts 'Person created successfully'
   end
 
   def create_book
@@ -95,6 +105,49 @@ class App
       if rental.person.id == person_id
         puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}"
       end
+    end
+  end
+
+  def display_menu
+    puts "\nPlease choose an option by serial number:"
+    puts '1 - List all books'
+    puts '2 - List all people'
+    puts '3 - Create a person teacher or student'
+    puts '4 - Create a book'
+    puts '5 - Create a rental'
+    puts '6 - List all rentals for a given person id'
+    puts '7 - Quit'
+  end
+
+  def process_option(option)
+    case option
+    when 1
+      list_books
+    when 2
+      list_people
+    when 3
+      create_person
+    when 4
+      create_book
+    when 5
+      create_rental
+    when 6
+      list_rentals_for_person
+    else
+      puts 'Invalid option. Please select a valid option.'
+    end
+  end
+
+  def run
+    loop do
+      display_menu
+      option = gets.chomp.to_i
+
+      if option == 7
+        puts 'Thanks for using Library!'
+        break
+      end
+      process_option(option)
     end
   end
 end
