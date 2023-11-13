@@ -8,7 +8,7 @@ class Classroom
   end
 
   def add_student(student)
-    @students << student
-    student.Classroom
+    students << student
+    student.join_classroom(self)
   end
 end
